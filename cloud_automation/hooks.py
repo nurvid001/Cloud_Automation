@@ -95,13 +95,26 @@ app_license = "MIT"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-#	"*": {
-#		"on_update": "method",
-#		"on_cancel": "method",
-#		"on_trash": "method"
-#	}
-# }
+doc_events = {
+	# "*": {
+	# 	"on_update": "method",
+	# 	"on_cancel": "method",
+	# 	"on_trash": "method",
+	# 	"on_submit": "cloud_automation.cloud_server.get_server"
+	# },
+#  	"cloud_automation":{
+#       	"on_submit": "cloud_automation.cloud_services.services.submited_form"
+#        "erpnext.regional.italy.utils.sales_invoice_on_submit",
+#  },
+  	"Cloud Automation": {
+		"on_submit": [
+			"cloud_automation.cloud_services.doctype.cloud_automation.cloud_automation.o_submit"
+			# "cloud_automation.cloud_services.services.CloudAutomation.services_on_submit",
+			# "cloud_automation.cloud_services.doctype.cloud_automation.cloud_automation.CloudAutomation.on_submit"
+		]
+	}
+ 
+}
 
 # Scheduled Tasks
 # ---------------
