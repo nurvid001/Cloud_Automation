@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include cloud_automation *.css
+recursive-include cloud_automation *.csv
+recursive-include cloud_automation *.html
+recursive-include cloud_automation *.ico
+recursive-include cloud_automation *.js
+recursive-include cloud_automation *.json
+recursive-include cloud_automation *.md
+recursive-include cloud_automation *.png
+recursive-include cloud_automation *.py
+recursive-include cloud_automation *.svg
+recursive-include cloud_automation *.txt
+recursive-exclude cloud_automation *.pyc
