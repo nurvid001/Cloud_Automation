@@ -3,11 +3,11 @@
  "allow_rename": 1,
  "creation": "2023-07-13 19:45:06.524434",
  "doctype": "DocType",
- "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "disk_type",
-  "amended_from"
+  "amended_from",
+  "operating_system"
  ],
  "fields": [
   {
@@ -24,12 +24,18 @@
    "options": "Cloud Automation",
    "print_hide": 1,
    "read_only": 1
+  },
+  {
+   "fieldname": "operating_system",
+   "fieldtype": "Select",
+   "label": "Operating System",
+   "options": "\nLinux\nWindows\nMac"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-07-13 20:31:09.989125",
+ "modified": "2023-07-13 23:09:50.217790",
  "modified_by": "Administrator",
  "module": "Cloud Services",
  "name": "Cloud Automation",
@@ -45,6 +51,22 @@
    "report": 1,
    "role": "System Manager",
    "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "select": 1,
+   "set_user_permissions": 1,
+   "share": 1,
+   "submit": 1,
    "write": 1
   }
  ],
